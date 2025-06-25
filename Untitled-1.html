@@ -1,26 +1,238 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Meu Site</title>
+  <style>
+    :root {
+      --creme: #fdf6e3;
+      --vinho: #800020;
+      --texto: #333;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: var(--creme);
+      color: var(--texto);
+      display: flex;
+      min-height: 100vh;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 200px;
+      right: 0;
+      height: 60px;
+      background-color: var(--vinho);
+      color: white;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      z-index: 1000;
+    }
+
+    .logo {
+      height: 40px;
+      margin-right: 15px;
+      background-color: white;
+      width: 40px;
+      border-radius: 5px;
+    }
+
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 200px;
+      height: 100%;
+      background-color: var(--vinho);
+      padding-top: 70px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+    }
+
+    .sidebar li {
+      margin: 20px 0;
+    }
+
+    .sidebar a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      display: block;
+      transition: background 0.3s;
+    }
+
+    .sidebar a:hover {
+      background-color: #a83246;
+    }
+
+    main {
+      margin-left: 200px;
+      margin-top: 70px;
+      padding: 20px;
+      flex: 1;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      left: 200px;
+      right: 0;
+      background-color: var(--vinho);
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
 </head>
 <body>
+  <header>
+    <div class="logo"></div>
     <h1>Doces</h1>
-    <p><b>Brigadeiro de panela.</b></p>
-    <img src="https://static.itdg.com.br/images/640-400/0e025d42083595bce669740d90551ed0/brigadeiro-de-panela.jpg" alt="imagem brigadeiro na panela">
-    <p><i> Numa panela, misture o leite e o chocolate em pó. <br> Leve ao fogo baixo e mexa bem, até dissolver o chocolate. <br>
+  </header>
+
+  <nav class="sidebar">
+    <ul>
+      <li><a href="#">Início</a></li>
+      <li><a href="#">Sobre</a></li>
+      <li><a href="#">Projetos</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+  </nav>
+  
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Doces e Lembranças</title>
+  <style>
+    :root {
+      --creme: #fdf6e3;
+      --vinho: #800020;
+      --texto: #333;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      background-color: var(--creme);
+      color: var(--texto);
+      display: flex;
+      min-height: 100vh;
+    }
+
+    header {
+      position: fixed;
+      top: 0;
+      left: 200px;
+      right: 0;
+      height: 60px;
+      background-color: var(--vinho);
+      color: white;
+      display: flex;
+      align-items: center;
+      padding: 0 20px;
+      z-index: 1000;
+    }
+
+    .logo {
+      height: 40px;
+      margin-right: 15px;
+      background-color: white;
+      width: 40px;
+      border-radius: 5px;
+    }
+
+    .sidebar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 200px;
+      height: 100%;
+      background-color: var(--vinho);
+      padding-top: 70px;
+    }
+
+    .sidebar ul {
+      list-style: none;
+    }
+
+    .sidebar li {
+      margin: 20px 0;
+    }
+
+    .sidebar a {
+      color: white;
+      text-decoration: none;
+      padding: 10px 20px;
+      display: block;
+      transition: background 0.3s;
+    }
+
+    .sidebar a:hover {
+      background-color: #a83246;
+    }
+
+    main {
+      margin-left: 200px;
+      margin-top: 70px;
+      padding: 20px;
+      flex: 1;
+    }
+
+    footer {
+      position: fixed;
+      bottom: 0;
+      left: 200px;
+      right: 0;
+      background-color: var(--vinho);
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo"></div>
+    <h1>Doces</h1>
+  </header>
+
+  <nav class="sidebar">
+    <ul>
+      <li><a href="#">Início</a></li>
+      <li><a href="#">Sobre</a></li>
+      <li><a href="#">Projetos</a></li>
+      <li><a href="#">Contato</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>Bem-vindo!</h2>
+    <p>Numa panela, misture o leite e o chocolate em pó. <br> Leve ao fogo baixo e mexa bem, até dissolver o chocolate. <br>
          Junte o leite condensado, a manteiga e, quando ferver, <br> calcule 15 minutos cozinhando, sem parar de mexer, ou até aparecer o
-          fundo da panela. <br> Retire a panela do fogo e transfira o brigadeiro para o prato.<i></p>
-            <br> <p><b>Bem casado.</b></p>
-            <img src="https://static.itdg.com.br/images/640-400/e4e05ab3515b0ac1c293cdacaef48d89/bem-casado.jpg" alt="imagem bem casado">
-            <p><i>Em uma batedeira, bata os ovos e o açúcar por 10 minutos, até a massa ficar leve e fofa. <br>
-                Desligue a batedeira, acrescente a farinha de trigo e o fermento peneirados. <br> Misture delicadamente até que 
-                fique homogêneo.
-                Coloque a massa em uma forma untada e enfarinhada <br> e leve para assar no forno médio a 180 graus Celsius
-                 preaquecido por cerca de 10 minutos. <br> Enquanto isso, faça a calda
-                Para montar o bem-casado, corte a massa com um cortador redondo. <br>Coloque o doce de leite em uma bolachinha,
-                 cubra com outra e passe o doce pela calda,</i></p>
+          fundo da panela. <br> Retire a panela do fogo e transfira o brigadeiro para o prato.</p></p>
+  </main>
+
+  <footer>
+    <p>© 2025 Doces e Lembranças. Todos os direitos reservados.</p>
+  </footer>
 </body>
 </html>
